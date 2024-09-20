@@ -1,0 +1,63 @@
+<button onClick = "show()"class=button-52>執行</button>
+
+<div id = "text"></div>
+
+<script>
+
+let msg = ["你今天也好棒喔(灬ºωº灬)", "快要放假了好開心(✿ﾟ▽ﾟ)ノ", "欸欸 要一起來念書嗎(๑•̀ㅂ•́)و✧"];
+let color=["#FFCCCC	", "#FFFF99", "#FFCC99"];
+let i = 0;
+
+function show()
+
+{
+
+document.getElementById("text").innerHTML = msg[i%3];
+document.body.style.backgroundColor = color[i%3];
+++i;
+
+}
+
+</script>
+
+<style>
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #CCCCFF;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+</style>
