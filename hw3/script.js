@@ -6,7 +6,7 @@ let x2 = canvas.width, y2 = 0, dx2 = 5, dy2 = 5, r2 = 30, color2;
 let x3 = canvas.height, y3 = 0, dx3 = 5, dy3 = 5, r3 = 30, color3;
 color=["#9999CC", "#B8B8DC", "#D8D8EB"];
 color2=["#EBD3E8", "#D3A4FF", "#E6CAFF"];
-color3=["#B7FF4A", "#C2FF68", "#DEFFAC"];
+color3=["#B7FF4A", "#CCFF80", "#DEFFAC"];
 let i=0;
 let j=0;
 let k=0;
