@@ -61,14 +61,23 @@ function draw()
 	}
 	
 	
-	if((x-x2)*(x-x2) + (y-y2)*(y-y2) < (r+r2)*(r+r2))		[dx, dy, dx2, dy2] = [dx2, dy2, dx, dy];
-	if((x-x3)*(x-x3) + (y-y3)*(y-y3) < (r+r3)*(r+r3))		[dx, dy, dx3, dy3] = [dx3, dy3, dx, dy];
-    if((x2-x3)*(x2-x3) + (y2-y3)*(y2-y3) < (r2+r3)*(r2+r3))	[dx2, dy2, dx3, dy3] = [dx3, dy3, dx2, dy2];
+	if((x-x2)*(x-x2) + (y-y2)*(y-y2) < (r+r2)*(r+r2)){
+		[dx, dy, dx2, dy2] = [dx2, dy2, dx, dy];
+		i++
+	}
+	if((x-x3)*(x-x3) + (y-y3)*(y-y3) < (r+r3)*(r+r3)){
+		[dx, dy, dx3, dy3] = [dx3, dy3, dx, dy];
+		j++
+	}
+    if((x2-x3)*(x2-x3) + (y2-y3)*(y2-y3) < (r2+r3)*(r2+r3)){
+	    [dx2, dy2, dx3, dy3] = [dx3, dy3, dx2, dy2];
+	    k++;
+    }
 	
 	
 	drawBall(x, y, r, color[i%3]);
 	drawBall(x2, y2, r2, color2[j%3]);
-	drawBall(x3, y3, r3, color3[i%3]);
+	drawBall(x3, y3, r3, color3[k%3]);
 
     requestAnimationFrame(draw);
 }
