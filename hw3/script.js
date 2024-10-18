@@ -63,14 +63,17 @@ function draw()
 	
 	if((x-x2)*(x-x2) + (y-y2)*(y-y2) < (r+r2)*(r+r2)){
 		[dx, dy, dx2, dy2] = [dx2, dy2, dx, dy];
-		i++
+		i++;
+		j++;
 	}
 	if((x-x3)*(x-x3) + (y-y3)*(y-y3) < (r+r3)*(r+r3)){
 		[dx, dy, dx3, dy3] = [dx3, dy3, dx, dy];
-		j++
+		i++;
+		k++;
 	}
     if((x2-x3)*(x2-x3) + (y2-y3)*(y2-y3) < (r2+r3)*(r2+r3)){
 	    [dx2, dy2, dx3, dy3] = [dx3, dy3, dx2, dy2];
+	    j++
 	    k++;
     }
 	
