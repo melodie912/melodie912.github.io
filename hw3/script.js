@@ -49,7 +49,7 @@ function draw()
 	}
 	if(y2<0 || y2>canvas.height){
 		dy2=-dy2;
-		j++
+		j++;
 	}
 	if(x3<0 || x3>canvas.width){
 		dx3=-dx3;
