@@ -73,7 +73,7 @@ function draw()
 	}
     if((x2-x3)*(x2-x3) + (y2-y3)*(y2-y3) < (r2+r3)*(r2+r3)){
 	    [dx2, dy2, dx3, dy3] = [dx3, dy3, dx2, dy2];
-	    j++
+	    j++;
 	    k++;
     }
 	
